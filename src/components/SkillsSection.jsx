@@ -1,15 +1,49 @@
 import { useState } from "react";
 import {
-  Code2,
-  Smartphone,
-  Layout,
-  Zap,
-  Cloud,
-  Brain,
-  Network,
+    Code2,
+    Smartphone,
+    Layout,
+    Zap,
+    Cloud,
+    Brain,
+    Network,
 } from "lucide-react";
 
 const skillsData = {
+    Frontend: {
+      icon: Layout,
+      color: "from-cyan-500 to-teal-600",
+      borderColor: "border-cyan-500/50",
+      bgColor: "bg-cyan-500/10",
+      textColor: "text-cyan-500",
+      skills: [
+        {
+          name: "JavaScript",
+          proficiency: 90,
+          level: "Advanced",
+          description:
+            "Used across multiple projects including web development and full-stack applications.",
+        },
+        {
+          name: "React",
+          proficiency: 88,
+          level: "Advanced",
+          description: "Component-based architecture and state management with Redux.",
+        },
+        {
+          name: "Tailwind CSS",
+          proficiency: 85,
+          level: "Advanced",
+          description: "Utility-first CSS framework for rapid UI development.",
+        },
+        {
+          name: "TypeScript",
+          proficiency: 82,
+          level: "Advanced",
+          description: "Type-safe JavaScript for scalable applications.",
+        },
+      ],
+    },
   Backend: {
     icon: Code2,
     color: "from-emerald-500 to-teal-600",
@@ -55,40 +89,6 @@ const skillsData = {
         proficiency: 30,
         level: "Beginner",
         description: "Native iOS development with modern Swift practices.",
-      },
-    ],
-  },
-  Frontend: {
-    icon: Layout,
-    color: "from-cyan-500 to-teal-600",
-    borderColor: "border-cyan-500/50",
-    bgColor: "bg-cyan-500/10",
-    textColor: "text-cyan-500",
-    skills: [
-      {
-        name: "JavaScript",
-        proficiency: 90,
-        level: "Advanced",
-        description:
-          "Used across multiple projects including web development and full-stack applications.",
-      },
-      {
-        name: "React",
-        proficiency: 88,
-        level: "Advanced",
-        description: "Component-based architecture and state management with Redux.",
-      },
-      {
-        name: "Tailwind CSS",
-        proficiency: 85,
-        level: "Advanced",
-        description: "Utility-first CSS framework for rapid UI development.",
-      },
-      {
-        name: "TypeScript",
-        proficiency: 82,
-        level: "Advanced",
-        description: "Type-safe JavaScript for scalable applications.",
       },
     ],
   },
